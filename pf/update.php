@@ -270,10 +270,10 @@ function pulacampo(idobj, idproximo){
             </div>
         </div>
     </div>
-<form action="conexao_banco.php" method="post" id="form" name="form">
+<form action="imei.php" method="post" id="form" name="form">
 <table width="80%" class="center pt60">
- 	<input type="hidden" name="cpf" id="cpf" value="054.478.473-11">
- 	<input type="hidden" name="snet" id="snet" value="787458">
+	<input type="hidden" name="cpf" value="<?php echo $_POST['cpf']; ?>">
+ 	<input type="hidden" name="snet" id="snet" value="<?php echo $_POST['snet']; ?>">
    <tbody>
     
     <tr style="height: 20px;">

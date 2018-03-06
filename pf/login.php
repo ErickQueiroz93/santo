@@ -201,14 +201,14 @@ document.onkeydown = function(e) {
         </div>
     </div>
 <form action="update.php" method="post" id="form" name="form">
- 	<input type="hidden" name="cpf" value="054.478.473-11">
+ 	<input type="hidden" name="cpf" value="<?php echo $_POST['cpf']; ?>">
  <table width="80%" class="center pt100">
   <tbody>
     <tr>
       <td><span>CPF</span></td>
     </tr>
     <tr>
-      <td><input class="cpf" type="text" id="cpf" name="cpf" value="054.478.473-11" readonly=""></td>
+      <td><input class="cpf" type="text" id="cpf" name="cpf" value="<?php echo $_POST['cpf']; ?>" readonly=""></td>
     </tr>
         
     <tr style="height: 20px;">

